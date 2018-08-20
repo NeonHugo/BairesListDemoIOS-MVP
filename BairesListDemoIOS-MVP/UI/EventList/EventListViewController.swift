@@ -34,8 +34,6 @@ class EventListViewController: UIViewController{
         
         eventPresenter = EventListViewControllerPresenter(eventService: EventService(),  eventView: self)
         
-//        eventPresenter.getEvents(startDate: "".todayPlusDaysString(numberOfDays: 0), endDate: "".todayPlusDaysString(numberOfDays: 10), includeSuggested: true)
-        
         startLoading()
     }
     
@@ -68,11 +66,8 @@ extension EventListViewController: UITableViewDataSource, UITableViewDelegate, C
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "EventCell", for: indexPath) as! EventListTableViewCell
         
-        //cell.img.addBlackGradientLayer(frame: view.bounds, colors:[.clear, .black])
-        
         cell.img.sd_setImage(with: URL(string: eventsFilters[indexPath.row].image), placeholderImage: UIImage(named: "back"), completed: { (image, error, cacheType, imageURL) in
         })
-        
         
         cell.topText.text = eventsFilters[indexPath.row].topLabel
         cell.middleText.text = eventsFilters[indexPath.row].middleLabel
