@@ -150,6 +150,7 @@ extension EventListViewController: UISearchBarDelegate {
 }
 
 extension EventListViewController: EventView {
+    
     func startLoading() {
         activityIndicator!.startAnimating()
         //

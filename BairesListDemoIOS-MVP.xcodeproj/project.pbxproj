@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8638197B212CCA6600E9CEDA /* DateForInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8638197A212CCA6600E9CEDA /* DateForInterval.swift */; };
 		865BCBD52124EECD000E8DFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865BCBD42124EECD000E8DFC /* AppDelegate.swift */; };
 		865BCBDA2124EECE000E8DFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 865BCBD82124EECE000E8DFC /* Main.storyboard */; };
 		865BCBDC2124EECF000E8DFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 865BCBDB2124EECF000E8DFC /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 		683B37D99204A9510AABFC59 /* Pods_BairesListDemoIOS_MVPTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BairesListDemoIOS_MVPTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D5154CD678C4E6C6E9D922B /* Pods-BairesListDemoIOS-MVPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BairesListDemoIOS-MVPTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BairesListDemoIOS-MVPTests/Pods-BairesListDemoIOS-MVPTests.release.xcconfig"; sourceTree = "<group>"; };
 		80D3167AA1D9DD493C915B78 /* Pods_BairesListDemoIOS_MVPUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BairesListDemoIOS_MVPUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8638197A212CCA6600E9CEDA /* DateForInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateForInterval.swift; sourceTree = "<group>"; };
 		865BCBD12124EECD000E8DFC /* BairesListDemoIOS-MVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BairesListDemoIOS-MVP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		865BCBD42124EECD000E8DFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		865BCBD92124EECE000E8DFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 			children = (
 				865BCBE92124EECF000E8DFC /* BairesListDemoIOS_MVPTests.swift */,
 				865BCBEB2124EECF000E8DFC /* Info.plist */,
+				8638197A212CCA6600E9CEDA /* DateForInterval.swift */,
 			);
 			path = "BairesListDemoIOS-MVPTests";
 			sourceTree = "<group>";
@@ -457,6 +460,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8638197B212CCA6600E9CEDA /* DateForInterval.swift in Sources */,
 				865BCBEA2124EECF000E8DFC /* BairesListDemoIOS_MVPTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
