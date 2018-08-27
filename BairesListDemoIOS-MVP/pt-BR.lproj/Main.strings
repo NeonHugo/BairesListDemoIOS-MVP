@@ -1,0 +1,21 @@
+
+/* Class = "UIButton"; normalTitle = "Error Try Again"; ObjectID = "cZM-fM-GfU"; */
+"cZM-fM-GfU.normalTitle" = "Error Try Again";
+
+/* Class = "UISearchBar"; jpg-UM-aX6.scopeButtonTitles[0] = "Seggested"; ObjectID = "jpg-UM-aX6"; */
+"jpg-UM-aX6.scopeButtonTitles[0]" = "Seggested";
+
+/* Class = "UISearchBar"; jpg-UM-aX6.scopeButtonTitles[1] = "Viewed"; ObjectID = "jpg-UM-aX6"; */
+"jpg-UM-aX6.scopeButtonTitles[1]" = "Viewed";
+
+/* Class = "UISearchBar"; jpg-UM-aX6.scopeButtonTitles[2] = "Favorites"; ObjectID = "jpg-UM-aX6"; */
+"jpg-UM-aX6.scopeButtonTitles[2]" = "Favorites";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "vgR-9W-q9b"; */
+"vgR-9W-q9b.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "xk9-IO-ngL"; */
+"xk9-IO-ngL.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "zhZ-O6-eeV"; */
+"zhZ-O6-eeV.text" = "Label";

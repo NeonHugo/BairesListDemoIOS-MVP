@@ -16,8 +16,6 @@ class EventListViewController: UIViewController{
     
     @IBOutlet weak var retryButton: UIButton!
     
-
-    
     @IBOutlet weak var statusIndicator: UIActivityIndicatorView!
     var eventPresenter: EventPresenter!
     
@@ -44,7 +42,8 @@ class EventListViewController: UIViewController{
     
     private func setupSearchBar(){
         searchBar.delegate = self
-        searchBar.placeholder = "Event"
+        searchBar.placeholder = "event".localized()
+        searchBar.scopeButtonTitles = ["suggested".localized(),"viewed".localized(),"favorite".localized()]
     }
     
     @IBAction func retryButtonAction(_ sender: UIButton) {
@@ -122,24 +121,24 @@ extension EventListViewController: UISearchBarDelegate {
     
     func filterResults(){
         let opc = searchBar.selectedScopeButtonIndex
-        let searchText = searchBar.text ?? ""
+        let searchText = searchBar.text?.lowercased().trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
         
         switch opc {
         case 1:
             eventsFilters = events.filter { event in
-                let isMatchingSearchText =  (event.middleLabel.lowercased().contains(searchText.lowercased())
+                let isMatchingSearchText =  (event.middleLabel.lowercased().contains(searchText)
                     || searchText.count == 0) && event.status == 1
                 return isMatchingSearchText
             }
         case 2:
             eventsFilters = events.filter { event in
-                let isMatchingSearchText =  (event.middleLabel.lowercased().contains(searchText.lowercased())
+                let isMatchingSearchText =  (event.middleLabel.lowercased().contains(searchText)
                     || searchText.count == 0) && event.like == 1
                 return isMatchingSearchText
             }
         default:
             eventsFilters = events.filter { event in
-                let isMatchingSearchText =  event.middleLabel.lowercased().contains(searchText.lowercased())
+                let isMatchingSearchText =  event.middleLabel.lowercased().contains(searchText)
                     || searchText.count == 0
                 return isMatchingSearchText
             }
@@ -187,25 +186,4 @@ extension EventListViewController: EventView {
     }
 }
 
-extension String {
-    func todayPlusDaysString(numberOfDays: Int) -> String {
-        let today = Date()
-        let daysAfter = Calendar.current.date(byAdding: .day, value: numberOfDays, to: today)
-        
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd"
-        
-        let result = formatter.string(from: daysAfter!)
-        
-        return result
-    }
-}
 
-extension UIImageView{
-    func addBlackGradientLayer(frame: CGRect, colors:[UIColor]){
-        let gradient = CAGradientLayer()
-        gradient.frame = frame
-        gradient.colors = colors.map{$0.cgColor}
-        self.layer.addSublayer(gradient)
-    }
-}

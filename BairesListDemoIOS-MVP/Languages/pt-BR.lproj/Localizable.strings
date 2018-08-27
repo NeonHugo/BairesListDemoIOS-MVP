@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  BairesListDemoIOS-MVP
+
+  Created by NeoNHugo on 8/27/18.
+  Copyright © 2018 NeoNHugo. All rights reserved.
+*/
+"event" = "Evento";
+"suggested" = "Sugerido";
+"viewed" = "Visualizado";
+"favorite" = "Favorito";

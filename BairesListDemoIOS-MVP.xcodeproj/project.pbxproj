@@ -21,6 +21,8 @@
 		865BCC112124FB37000E8DFC /* EventListViewControllerContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865BCC102124FB37000E8DFC /* EventListViewControllerContract.swift */; };
 		865BCC1521250379000E8DFC /* EventListViewControllerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865BCC1421250379000E8DFC /* EventListViewControllerPresenter.swift */; };
 		86728591212ADB7000B15EA2 /* Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86728590212ADB7000B15EA2 /* Parameter.swift */; };
+		86A0C1C8213413BF00C753E8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 86A0C1CA213413BF00C753E8 /* Localizable.strings */; };
+		86A0C1CF2134187F00C753E8 /* ToolBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A0C1CE2134187F00C753E8 /* ToolBox.swift */; };
 		86F7E7942126065E00F2671C /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F7E7932126065E00F2671C /* CheckBox.swift */; };
 		9C573338F89CC4CAAE5366C3 /* Pods_BairesListDemoIOS_MVPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 683B37D99204A9510AABFC59 /* Pods_BairesListDemoIOS_MVPTests.framework */; };
 		D112BD90C8B3DE7675F86C90 /* Pods_BairesListDemoIOS_MVPUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D3167AA1D9DD493C915B78 /* Pods_BairesListDemoIOS_MVPUITests.framework */; };
@@ -72,6 +74,11 @@
 		865BCC1421250379000E8DFC /* EventListViewControllerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewControllerPresenter.swift; sourceTree = "<group>"; };
 		865BCC162125A277000E8DFC /* BairesListDemoIOS-MVP-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BairesListDemoIOS-MVP-Bridging-Header.h"; sourceTree = "<group>"; };
 		86728590212ADB7000B15EA2 /* Parameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parameter.swift; sourceTree = "<group>"; };
+		86A0C1C9213413BF00C753E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		86A0C1CB2134148800C753E8 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
+		86A0C1CC2134148800C753E8 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		86A0C1CD2134148800C753E8 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		86A0C1CE2134187F00C753E8 /* ToolBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBox.swift; sourceTree = "<group>"; };
 		86F7E7932126065E00F2671C /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		A08B72A1FE540EE7D86B0C7E /* Pods-BairesListDemoIOS-MVPUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BairesListDemoIOS-MVPUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BairesListDemoIOS-MVPUITests/Pods-BairesListDemoIOS-MVPUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B27EBDB1C12E6CF6BACCA8B7 /* Pods-BairesListDemoIOS-MVPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BairesListDemoIOS-MVPTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BairesListDemoIOS-MVPTests/Pods-BairesListDemoIOS-MVPTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -144,6 +151,7 @@
 		865BCBD32124EECD000E8DFC /* BairesListDemoIOS-MVP */ = {
 			isa = PBXGroup;
 			children = (
+				86A0C1C3213412BD00C753E8 /* Languages */,
 				8672858F212A259D00B15EA2 /* Custom */,
 				865BCC042124EF3F000E8DFC /* Server */,
 				865BCC032124EF36000E8DFC /* UI */,
@@ -181,6 +189,7 @@
 			children = (
 				865BCC052124EFB0000E8DFC /* Event.swift */,
 				86728590212ADB7000B15EA2 /* Parameter.swift */,
+				86A0C1CE2134187F00C753E8 /* ToolBox.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -219,6 +228,14 @@
 				86F7E7932126065E00F2671C /* CheckBox.swift */,
 			);
 			path = Custom;
+			sourceTree = "<group>";
+		};
+		86A0C1C3213412BD00C753E8 /* Languages */ = {
+			isa = PBXGroup;
+			children = (
+				86A0C1CA213413BF00C753E8 /* Localizable.strings */,
+			);
+			path = Languages;
 			sourceTree = "<group>";
 		};
 		F13EA17CCC7752201C2E7E73 /* Frameworks */ = {
@@ -322,6 +339,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = 865BCBC82124EECD000E8DFC;
 			productRefGroup = 865BCBD22124EECD000E8DFC /* Products */;
@@ -341,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				865BCBDF2124EECF000E8DFC /* LaunchScreen.storyboard in Resources */,
+				86A0C1C8213413BF00C753E8 /* Localizable.strings in Resources */,
 				865BCBDC2124EECF000E8DFC /* Assets.xcassets in Resources */,
 				865BCBDA2124EECE000E8DFC /* Main.storyboard in Resources */,
 			);
@@ -449,6 +468,7 @@
 				865BCC062124EFB0000E8DFC /* Event.swift in Sources */,
 				86728591212ADB7000B15EA2 /* Parameter.swift in Sources */,
 				865BCBD52124EECD000E8DFC /* AppDelegate.swift in Sources */,
+				86A0C1CF2134187F00C753E8 /* ToolBox.swift in Sources */,
 				865BCC1521250379000E8DFC /* EventListViewControllerPresenter.swift in Sources */,
 				865BCC0F2124F988000E8DFC /* EventService.swift in Sources */,
 				865BCC0B2124F1AA000E8DFC /* EventListTableViewCell.swift in Sources */,
@@ -493,6 +513,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				865BCBD92124EECE000E8DFC /* Base */,
+				86A0C1CB2134148800C753E8 /* pt-BR */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -501,8 +522,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				865BCBDE2124EECF000E8DFC /* Base */,
+				86A0C1CC2134148800C753E8 /* pt-BR */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		86A0C1CA213413BF00C753E8 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86A0C1C9213413BF00C753E8 /* en */,
+				86A0C1CD2134148800C753E8 /* pt-BR */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -512,6 +543,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -572,6 +604,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
